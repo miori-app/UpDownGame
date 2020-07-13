@@ -85,6 +85,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <segue destination="sSO-dt-CxV" kind="presentation" modalTransitionStyle="crossDissolve" id="qW3-5N-dOg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.49803921568627452" green="0.72156862745098038" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,10 +126,79 @@
             </objects>
             <point key="canvasLocation" x="138.61607142857142" y="137.68115942028987"/>
         </scene>
+        <!--Credit View Controller-->
+        <scene sceneID="XQ0-6O-7uW">
+            <objects>
+                <viewController id="sSO-dt-CxV" customClass="CreditViewController" customModule="UpDownGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qju-Gl-ZII">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQq-lD-jJe">
+                                <rect key="frame" x="64" y="20" width="60" height="42"/>
+                                <state key="normal" image="xmark.icloud.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miori_symbol" translatesAutoresizingMaskIntoConstraints="NO" id="1BX-mC-OVL">
+                                <rect key="frame" x="64" y="107" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="fi5-SR-6yX"/>
+                                    <constraint firstAttribute="width" constant="200" id="rBR-Yv-yiF"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m5v-nF-wCn">
+                                <rect key="frame" x="284" y="20" width="548" height="353"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Hello World!
+
+안녕하세여
+
+My name is miori :)
+
+My github link is https://github.com/iammiori
+
+첫 iOS앱 입니다.
+
+무지 설레네여..
+
+얼른 더 성장해야징..
+
+물론 crossfit도..ㅎ
+
+Thank to yagom</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1BX-mC-OVL" firstAttribute="centerY" secondItem="qju-Gl-ZII" secondAttribute="centerY" id="CWK-cS-LkG"/>
+                            <constraint firstItem="1BX-mC-OVL" firstAttribute="leading" secondItem="MQq-lD-jJe" secondAttribute="leading" id="HRG-AW-4lF"/>
+                            <constraint firstItem="m5v-nF-wCn" firstAttribute="leading" secondItem="1BX-mC-OVL" secondAttribute="trailing" constant="20" id="I6D-6H-3Fi"/>
+                            <constraint firstItem="8fw-ca-e5S" firstAttribute="bottom" secondItem="m5v-nF-wCn" secondAttribute="bottom" constant="20" id="U87-vY-3gi"/>
+                            <constraint firstItem="MQq-lD-jJe" firstAttribute="leading" secondItem="8fw-ca-e5S" secondAttribute="leading" constant="20" id="aLu-sB-73E"/>
+                            <constraint firstItem="MQq-lD-jJe" firstAttribute="top" secondItem="8fw-ca-e5S" secondAttribute="top" constant="20" id="d3I-2e-xFE"/>
+                            <constraint firstItem="m5v-nF-wCn" firstAttribute="top" secondItem="8fw-ca-e5S" secondAttribute="top" constant="20" id="rFc-Eo-BJA"/>
+                            <constraint firstItem="8fw-ca-e5S" firstAttribute="trailing" secondItem="m5v-nF-wCn" secondAttribute="trailing" constant="20" id="tGh-mj-6Nk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8fw-ca-e5S"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4JL-Zz-2rl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.46428571428567" y="137.68115942028987"/>
+        </scene>
     </scenes>
     <resources>
         <image name="checkmark.seal.fill" catalog="system" width="128" height="122"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="memories" catalog="system" width="128" height="107"/>
+        <image name="miori_symbol" width="325" height="288"/>
+        <image name="xmark.icloud.fill" catalog="system" width="128" height="88"/>
     </resources>
 </document>
