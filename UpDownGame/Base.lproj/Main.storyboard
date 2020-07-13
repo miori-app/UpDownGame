@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JD1-PP-5wF">
-                                <rect key="frame" x="420" y="293" width="56" height="55"/>
+                                <rect key="frame" x="420" y="238" width="56" height="55"/>
                                 <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="checkmark.seal.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
@@ -96,7 +96,7 @@
                             <constraint firstItem="uM3-iN-5Jd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E52-VN-Q0U"/>
                             <constraint firstItem="xLK-yC-3UU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="G7x-Ac-mYP"/>
                             <constraint firstItem="apO-su-ftt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gd3-vZ-ePF"/>
-                            <constraint firstItem="lp8-ld-XEG" firstAttribute="top" secondItem="JD1-PP-5wF" secondAttribute="bottom" constant="16" id="KgY-2y-uRT"/>
+                            <constraint firstItem="JD1-PP-5wF" firstAttribute="top" secondItem="apO-su-ftt" secondAttribute="bottom" constant="16" id="JLu-An-J2x"/>
                             <constraint firstItem="FWX-np-ucM" firstAttribute="centerY" secondItem="116-7o-TyF" secondAttribute="centerY" id="Ofg-ty-GPq"/>
                             <constraint firstItem="xLK-yC-3UU" firstAttribute="centerY" secondItem="0u9-I4-iOS" secondAttribute="centerY" id="Oz9-XP-fdC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lp8-ld-XEG" secondAttribute="bottom" constant="8" id="Peu-dD-cso"/>
@@ -112,7 +112,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="maxValueLabel" destination="FWX-np-ucM" id="2cA-40-PQ7"/>
+                        <outlet property="minValueLabel" destination="116-7o-TyF" id="AYN-IJ-cQK"/>
                         <outlet property="slider" destination="apO-su-ftt" id="EQU-nh-Y8N"/>
+                        <outlet property="slierValueLabel" destination="uM3-iN-5Jd" id="eZv-NC-MQ6"/>
+                        <outlet property="tryCntLabel" destination="lp8-ld-XEG" id="pae-f4-IYQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
