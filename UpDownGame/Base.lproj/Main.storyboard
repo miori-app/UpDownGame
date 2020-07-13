@@ -35,7 +35,7 @@
                                     <action selector="sliderValueChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="aVl-fl-bpe"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZ3-Pt-V5i">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZ3-Pt-V5i">
                                 <rect key="frame" x="804" y="38" width="28" height="25"/>
                                 <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="memories" catalog="system">
@@ -90,6 +90,7 @@
                         <color key="backgroundColor" red="0.49803921568627452" green="0.72156862745098038" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JD1-PP-5wF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8g4-Up-AWG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QZ3-Pt-V5i" secondAttribute="trailing" constant="20" id="AAH-Cc-JBg"/>
                             <constraint firstItem="apO-su-ftt" firstAttribute="top" secondItem="uM3-iN-5Jd" secondAttribute="bottom" constant="16" id="Bnf-KZ-hJG"/>
                             <constraint firstItem="0u9-I4-iOS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ctl-NT-c0j"/>
                             <constraint firstItem="uM3-iN-5Jd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E52-VN-Q0U"/>

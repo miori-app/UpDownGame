@@ -8,6 +8,8 @@
 
 import UIKit
 
+//class 안에 들어있는 함수는 method라고 함
+
 class ViewController: UIViewController {
     
     //storyboard에서 갖고와
@@ -17,7 +19,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         slider.setThumbImage(#imageLiteral(resourceName: "slider_thumb"), for: .normal)
+        reset()
     }
+    /*
+     @IBAction : 인터페이스 빌더에서 연결할 action function
+     */
     
     //event driven
     @IBAction func sliderValueChanged( sender : UISlider){
@@ -30,7 +36,11 @@ class ViewController: UIViewController {
     
     @IBAction func touchUpResetButton( sender : UIButton){
         print("touch up reset button")
-        
+        reset()
+    }
+    
+    @IBAction func reset(){
+        print("reset")
     }
 }
 
