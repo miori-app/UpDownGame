@@ -141,6 +141,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <action selector="touchUpDismissButtonWithSender:" destination="sSO-dt-CxV" eventType="touchUpInside" id="55V-ct-Mo9"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miori_symbol" translatesAutoresizingMaskIntoConstraints="NO" id="1BX-mC-OVL">
                                 <rect key="frame" x="64" y="107" width="200" height="200"/>
