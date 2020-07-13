@@ -9,12 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //storyboard에서 갖고와
+    @IBOutlet weak var slider : UISlider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    //event driven
+    @IBAction func sliderValueChanged( sender : UISlider){
+        print(sender.value)
+    }
 
-
+    @IBAction func touchUpHitButton( sender : UIButton){
+        print(slider.value)
+    }
+    
+    @IBAction func touchUpResetButton( sender : UIButton){
+        print("touch up reset button")
+        
+    }
 }
 
